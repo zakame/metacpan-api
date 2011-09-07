@@ -16,6 +16,8 @@ analyzer camelcase => (
 
 index cpan => ( namespace => 'MetaCPAN::Document', alias_for => 'cpan_v3' );
 
+index cpan_v1 => ( namespace => 'MetaCPAN::Document' );
+
 index user => ( namespace => 'MetaCPAN::Model::User' );
 
 __PACKAGE__->meta->make_immutable;
